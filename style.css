@@ -1,0 +1,273 @@
+html {
+    background: #F3F5FC;
+}
+
+header h1 {
+    /* Logo */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.ingresa-texto {
+    /* Ingrese el texto aqui */
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+
+    font-family: 'Gadugi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+    
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+}
+
+textarea{
+    resize:none;
+    background-color:transparent;
+    border:none;
+    height: 400px;
+    width: 600px;
+    font-size: 26px;
+    color: #0A3871;
+    font-family: 'Gadugi';
+    position: absolute;
+    top: 168px;
+    left: 240px;
+    
+}
+
+
+.texto-informacion{
+    /* logo de advertencia*/
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+.texto-informacion p{
+    /* Solo letras minúsculas y sin acentos */
+    position: static;
+    width: 300px;
+    height: 18px;
+    left: 24px;
+    top: 0px;
+
+    font-family:'Gadugi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 90%;
+    color: #495057;
+    opacity: 0.8;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.marco-derecho {  
+    /* rectangulo 1 */
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    font-family: Gadugi;
+    background: #FFFFFF;
+    /* sombra del rectangulo */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.botones{
+    /* caja de botones encriptar/desencriptar*/
+    display: flex;
+    font-family: Gadugi;
+    position: absolute;
+    left: 240px;
+    top: 885px;
+}
+
+
+.botones :hover{  
+    text-decoration:none;
+    box-shadow: 0px 20px 20px -8px #343A40;
+    border-radius: 24px;    
+}
+
+
+.boton-encriptar{
+    position: static;
+    width: 328px;
+    height: 67px;
+
+    background: #0A3871;
+    color: #FFFFFF;
+    border-radius:  24px;
+
+    font-family: "Gadugi";
+    font-style: normal;
+    font-size: 26px;
+}
+
+
+.boton-desencriptar{
+    position: relative;
+    width: 328px;
+    height: 67px;
+    left: 40px;
+
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius:  24px;
+
+    font-family: "Gadugi";
+    font-style: normal;
+    font-size: 26px;
+}
+
+.boton-copiar {
+    position: absolute;
+    width: 328px;
+    height: 67px;
+    left: 1036px;
+    top: 885px;
+
+    background: #FFFFFF;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius:  24px;
+
+    font-family: "Gadugi";
+    font-style: normal;
+    font-size: 26px;
+
+}
+
+.div-boton-copiar :hover{  
+    text-decoration:none;
+    box-shadow: 0px 20px 20px -8px #343A40;
+    border-radius: 24px;     
+}
+
+.muneco{
+    /*posicion del muñeco */
+    position: absolute;
+    top: 283px;
+    left: 32px;
+}
+
+.mensajes{
+    /* caja mensajes marco derecho */
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 619px;
+}
+
+.resultado-formato{
+    position: absolute;
+    width: 328px;
+    height: 780px;
+    left: 1036px;
+    top: 72px;
+    
+    font-family: 'Gadugi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+   
+    color: #495057;
+}
+
+.sin-mensaje {
+    /* Ningun mensaje fue encontrado */
+    position: static;
+    width: 336px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 32px;
+
+}
+
+.texto-informativo {
+    /* Ingresa el texto que desees encriptar o desencriptar. */
+    position: static;
+    width: 336px;
+    height: 48px;
+    left: 0px;
+    top: 74px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 32px;
+}
+
+footer p{
+    position: absolute;
+    width: 1400px;
+    height: 50px;
+    left: 0px;
+    top: 1000px;
+    padding: 30px;
+
+    text-align: center;
+    font-family: Gadugi;
+    color: #021c35;
+    font-size: 23px;
+
+}
