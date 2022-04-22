@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Challenger 1</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+
+        <header>
+            <h1><img src="./imagenes/logo.svg"></h1>
+        </header>
+        
+        <main>
+            <textarea id="cuadro_ingreso" maxlength="300">Ingrese un texto para encriptar...</textarea><p></p>
+
+            <div class="texto-informacion">
+                <img src="./imagenes/Advertencia.svg">
+                <p>Solo letras minúsculas y sin acento.</p>
+            </div>
+
+            <div class="marco-derecho">
+                
+                <p id="img_muneco" class="muneco"><img src="imagenes/Muñeco.svg"></p>
+                <div id="cuadro_mensajes" class="mensajes">
+                    <p class="sin-mensaje">Ningún mensaje fue encontrado.</p>
+                    <p class="texto-informativo">Ingresá el texto que deseas encriptar o desencriptar.</p>
+                </div>
+            </div>
+        
+            <div class="botones">
+                <button id="b_encriptar" class="boton-encriptar">Encriptar</button>
+                <button id="b_desencriptar" class="boton-desencriptar">Desencriptar</button>
+            </div>
+
+                <textarea id="cuadro_resultado" class="resultado-formato" readonly></textarea>
+                <div class="div-boton-copiar"><button id="b_copiar" class="boton-copiar">Copiar</button></div>
+        </main>
+
+        <footer>
+            <p>&copy Copyright Lucas "el Luqui" Bustos - 2022</p>
+        </footer>
+    </body>
+
+<script src="./codificador.js"></script>
+</html>
